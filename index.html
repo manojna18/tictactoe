@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+  <h3>Time you wasted on playing the game: <span id="time"></span></h3>
+  <table id="board">
+    <tr>
+      <td cellIndex="0" class="cell" id="td_0"></td>
+      <td cellIndex="1" class="cell" id="td_1"></td>
+      <td cellIndex="2" class="cell" id="td_2"></td>
+    </tr>
+    <tr>
+      <td cellIndex="3" class="cell" id="td_3"></td>
+      <td cellIndex="4" class="cell" id="td_4"></td>
+      <td cellIndex="5" class="cell" id="td_5"></td>
+    </tr>
+    <tr>
+      <td cellIndex="6" class="cell" id="td_6"></td>
+      <td cellIndex="7" class="cell" id="td_7"></td>
+      <td cellIndex="8" class="cell" id="td_8"></td>
+    </tr>
+  </table>
+
+  <p id="message"></p>
+
+  <input type="radio" id="pxc" name="game_type" value="Player x Computer" />
+  <label for="playervscomp">Player x Computer</label>
+  <input type="radio" id="pxp" name="game_type" value="Player x Player" />
+  <label for="playervsplayer">Player x Player</label>
+
+  <button id="restart" onclick=gameReset()>Play again!</button>
+  <button id="next" onclick=gameType()>Start Playing!</button>
+  <button id="startOver">Start Over!</button>
+  
+  
+
+  <script defer type="text/javascript" src="script.js"></script>
+</body>
+</html>
